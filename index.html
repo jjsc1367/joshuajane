@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="Artboard 1.png" sizes="16x16" type="image/png">
+    <title>Joshua James</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            a {color:#f5e9de;text-decoration:none;}
+        a:hover {color:#FFAE7A;}
+
+      /*scroll shit*/
+        html::-webkit-scrollbar {
+        display: none;
+        }
+        body::-webkit-scrollbar {
+        display: none;
+        }
+        /*scroll shit*/
+
+      h1 {
+          font-size: 100px;
+          color:#f5e9de;
+          letter-spacing:2px;
+          word-spacing:2px;
+          font-family: 'Permanent Marker';
+          text-align: center;
+
+      }
+
+      body {
+          overflow-x: hidden;
+      }
+
+      body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+        overflow-x: hidden;
+      }
+
+        .purp {
+          /*background-image: url("purp.png");*/ /*purp.png simppurp.png greypurp.png*/
+          background-color: black;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          /*min-height: 10%;*/
+        }
+
+      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+        position: relative;
+        opacity: 1; /*was 0.65*/
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .bgimg-1 {
+        background-image: url("jjcrop.png");
+        min-height: 100%;
+      }
+
+      .bgimg-2 {
+        background-image: url("rrh.jpg");
+        min-height: 70%;
+      }
+
+      .bgimg-3 {
+        background-image: url("pink.jpg");
+        min-height: 70%;
+      }
+
+      .bgimg-4 {
+        background-image: url("chairs.jpg");
+        min-height: 80%;
+      }
+
+        .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0%, -50%);
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-family: 'Permanent Marker';
+      }
+        .caption span.border {
+        color: #f5e9de; /**/
+        padding: 18px;
+        font-size: 100px;
+        letter-spacing: 10px;
+      }
+
+        .tag {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0%, -50%);
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-family: 'Permanent Marker';
+      }
+        .tag span.border {
+        color: #f5e9de; /**/
+        padding: 18px;
+        font-size: 100px;
+        letter-spacing: 10px;
+      }
+
+        @media screen and (max-width: 600px) {
+          .tag {
+            top: 0%;
+            transform: translate(0%, 0%);
+          }
+          .tag span.border {
+            font-size: 30px;
+      }
+        }
+
+        @media screen and (max-width: 600px) {
+          .caption {
+            top: auto;
+            transform: translate(0%, 0%);
+          }
+          .caption span.border {
+            font-size: 70px;
+      }
+        }
+
+
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color:#f5e9de;
+      }
+
+      p {
+        letter-spacing: 3px;
+        /*text-transform: uppercase;*/
+        font: 2.4vw "Lato", sans-serif;
+        color:#f5e9de;j
+      }
+
+      .cloud {
+            margin-top: -17.33%;
+            margin-left: 50%;
+            width: 35%;
+            height: 35vw;
+            position: absolute;
+        }
+
+        @media screen and (max-width: 600px) {
+          .cloud {
+            margin-top: 0%;
+          }
+        }
+      .ep {
+            margin-top: -17.33%;
+            margin-left: 5%;
+            width: 34.75%;
+            /*height: 34.75vw;*/
+            position: absolute;
+        }
+      .title {
+            margin-top: -1.5%;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            position: absolute;
+        }
+        .outnow {
+            bottom: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            position: absolute;
+      }
+        .titlem {
+            margin-top: -1.5%;
+            margin-left: -53%;
+            /*height: 72.5%;*/
+            width: 200%;
+            position: absolute;
+        }
+        .outnowm {
+            bottom: 0px;
+            margin-left: -53%;
+            width: 200%;
+            position: absolute;
+      }
+
+      .space {
+          opacity: 0%;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+            }
+        }
+
+        div.comp {
+        }
+        @media screen and (max-width: 600px) {
+          div.comp {
+            display: none;
+          }
+        }
+
+        div.mobile {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+          div.mobile {
+            display: inline;
+          }
+        }
+
+        div.mobep {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+          div.mobep {
+            position: absolute;
+            display: block;
+            margin-top: -27.5%;
+            margin-left: -8%;
+            width: 235%;
+          }
+        }
+
+        .mobplayer {
+            margin-top: -43%;
+            margin-left: 50.25%;
+            width: 34.25%;
+            height: 80vw;
+            position: absolute;
+          }
+
+        div.mobcloud {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+          div.mobcloud {
+            position: relative;
+            display: block;
+            margin-top: 100%;
+            margin-left: -129%;
+            width: 265%;
+            height: 38%;
+          }
+        }
+
+        /*STUFF FOR LYRICS*/
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 20%;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+        /*STUFF FOR LYRICS*/
+
+    </style>
+    <script>
+        $('.captionfinal').each(function() {
+          var link = $(this).html();
+          $(this).contents().wrap('<a href="https://www.instagram.com/eltnjosh/"></a>');
+        });
+    </script>
+  </head>
+  <body>
+
+    <div class="bgimg-1">
+        <div class="comp">
+            <img class="title" src="jjtitle.png"/>
+            <img class="outnow" src="novoutnow1.png"/>
+        </div>
+        <div class="mobile">
+            <img class="titlem" src="titlemobile.png"/>
+            <img style="overflow-x: hidden;" class="outnowm" src="outnowmobile.png"/>
+        </div>
+    </div>
+
+    <div class="purp" style="color: #777;background-color:black;text-align:center;padding:23% 5%;text-align: justify;">
+        <!--^^^was padding:50px 80px;-->
+      <!--<h3 style="text-align:center;">Parallax Demo</h3>-->
+
+
+      <div class="comp">
+            <img class="cloud" src="Guest House EP.png"/>
+            <!--play around with switching cloud and ep, see which layout is better-->
+            <iframe class="ep" width="20%" height="65%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198992997&amp;color=%238c92b8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/josh-carlson-844874447" title="Josh Carlson" target="_blank" style="color: #cccccc; text-decoration: none;"></a><a href="https://soundcloud.com/josh-carlson-844874447/sets/websitetest-1" title="WebsiteTest" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+            <!--<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:7pXu47GoqSYRajmBCjxdD6&amp;size=detail&amp;theme=dark" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>-->
+            <!--<iframe src="https://open.spotify.com/embed/album/0woDg8EWf32yL9I5bhrGSD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-->
+      </div>
+      <div class="mobcloud">
+            <iframe class="mobplayer" width="20%" height="65%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198992997&amp;color=%238c92b8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/josh-carlson-844874447" title="Josh Carlson" target="_blank" style="color: #cccccc; text-decoration: none;"></a><a href="https://soundcloud.com/josh-carlson-844874447/sets/websitetest-1" title="WebsiteTest" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+      </div>
+
+
+      <div class="mobep">
+            <img class="ep" src="Guest House EP.png"/>
+      </div>
+
+    </div>
+    <div class="bgimg-2">
+      <div class="caption">
+        <!--<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>-->
+        <span class="border">Lyrics</span>
+      </div>
+    </div>
+
+    <div style="position:relative;">
+    <div style="color: #777;background-color:black;text-align:center;padding:23% 5%;text-align: justify;">
+      <!--<h3 style="text-align:center;">If I Stay</h3>-->
+
+      <!--lyrics-->
+      <div class="row">
+          <div class="column">
+            <h3 style="font: 2vw 'Lato', sans-serif;" >7THS</h3>
+            <p style="font: 1vw 'Lato', sans-serif;">
+                You know that I'm reckless
+                <br>
+                Stay with me regardless
+                <br>
+                I don't think I'd make it alone
+                <br>
+                To tell you the truth
+                <br>
+                I don't know why you ever
+                <br>
+                Pick up when I hit your phone
+                <br>
+                You know that you're always my baby
+                <br>
+                Usually
+                <br>
+                Things we don't talk about lately
+                <br>
+                You and me
+                <br>
+                Tryna get away from this daydream
+                <br>
+                Used to be
+                <br>
+                This isn't me
+
+            </p>
+          </div>
+          <div class="column">
+            <h3>IF I STAY</h3>
+            <p style="font: 1vw 'Lato', sans-serif;">
+                How long until you tell me
+                <br>
+                The words you want to hear?
+                <br>
+                She said it's never perfect
+                <br>
+                What could be my dear?
+                <br>
+                There&apos;s all these words in my head
+                <br>
+                But she&apos;s already left and now
+                <br>
+                Guess I gotta fix that
+                <br>
+                Cuz when you come around I just
+                <br>
+                Shut my mouth
+                <br>
+                I&apos;m running out of payback
+                <br>
+                If I stay
+                <br>
+                Tell me baby would you run away
+                <br>
+                If I fell for you
+            </p>
+          </div>
+          <div class="column">
+            <h3>Column 3</h3>
+            <p>Some text..</p>
+          </div>
+          <div class="column">
+            <h3>Column 4</h3>
+            <p>Some text..</p>
+          </div>
+          <div class="column">
+            <h3>Column 5</h3>
+            <p>Some text..</p>
+          </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="bgimg-3">
+      <div class="caption">
+        <!--<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>-->
+        <span class="border">About</span>
+      </div>
+    </div>
+
+
+    <div style="position:relative;">
+      <div style="color: #777;background-color:black;text-align:center;padding:23% 5%;text-align: left;">
+        <div class="comp">
+            <img class="cloud" src="about.png"/>
+            <p class="ep">Joshua James is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
+            he released his debut EP 'Guest House' in February, 2021. Joshua currently runs the recording studio at Middlebury College and has studied
+            with
+            <!--<br>-->
+            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>
+            <!--<a target="_blank" href="https://www.facebook.com/Upstartmusic/">(Upstart)</a>,-->
+            <!--<br>-->
+            <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>
+            <!--<a target="_blank" href="http://www.bradbabinski.com/">(Steady Holiday)</a>, -->
+            <!--<br>-->
+            and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>.
+            <!--<a target="_blank" href="https://www.drdogmusic.com/">(Dr. Dog)</a>.-->
+            </p>
+      </div>
+        </div>
+
+      <div class="mobcloud">
+            <p style="font-size: 4vw" class="mobplayer">Joshua James is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
+            he released his debut EP 'Guest House' in February, 2021.
+            Joshua currently runs the recording studio at Middlebury College and has studied             with
+            <!--<br>-->
+            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>
+            <!--<a target="_blank" href="https://www.facebook.com/Upstartmusic/">(Upstart)</a>,-->
+            <!--<br>-->
+            <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>
+            <!--<a target="_blank" href="http://www.bradbabinski.com/">(Steady Holiday)</a>, -->
+            <!--<br>-->
+            and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>.
+            <!--<a target="_blank" href="https://www.drdogmusic.com/">(Dr. Dog)</a>.-->
+            </p>
+      </div>
+
+
+      <div class="mobep">
+            <img class="ep" src="about.png"/>
+      </div>
+
+    </div>
+    <div class="bgimg-1">
+      <div class="tag">
+        <span class="border"><a target="_blank" href="http://www.instagram.com/joshua_james_music_/">@joshua_<br>james_<br>music_</a></span>
+      </div>
+    </div>
+  </body>
+</html>
